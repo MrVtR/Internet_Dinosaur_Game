@@ -45,7 +45,8 @@ function createCactus() {
       console.log(cactusPosition, position);
     } else if (cactusPosition > 0 && cactusPosition < 65 && position <= 200) {
       clearInterval(leftInterval);
-      document.body.innerHTML = '<h1 class="game-over">Fim de Jogo </h1>';
+      document.body.innerHTML =
+        '<div class="game-over"> <a href="JavaScript: location.reload(true);"><img src="imgs/game_over.gif"></img></a></div>';
     } else {
       console.log(cactusPosition, position);
       cactusPosition -= 10;
